@@ -4,23 +4,9 @@
 
 You pick a name and a level and type the phrase you're shown. The phrase **colours itself as you type**: green is right, red is wrong. Press Enter to finish. TypeSprint measures your **time, accuracy and speed (WPM)**, saves every attempt, and makes a **leaderboard** and a **personal report with a chart**. You can manage the phrase bank in its own window.
 
-```
-┌──────────────────────────────────────────────────────────────────┐
-│  TypeSprint   How fast can you type Python?                      │  ← header bar
-├──────────────────────────────────────────────────────────────────┤
-│  Player [Mina      ]   Level [medium ▾]                [ Start ] │
-│ ┌──────────────────────────────────────────────────────────────┐ │
-│ │  word = 'banana'[::-1]        (green ✓ / red ✗ / grey = next) │ │  ← live colouring
-│ └──────────────────────────────────────────────────────────────┘ │
-│  [ word = 'bana_                                             ] │
-│ ┌──────────┐ ┌──────────┐ ┌──────────┐ ┌──────────┐            │
-│ │ TIME     │ │ ACCURACY │ │ SPEED    │ │ YOUR BEST│            │  ← live stats
-│ │ 9.7 s    │ │ 95.2%    │ │ 26.0 wpm │ │ 66.9 wpm │            │
-│ └──────────┘ └──────────┘ └──────────┘ └──────────┘            │
-│  Good job!   Press Esc for the next phrase.                      │
-│  [Leaderboard] [My report] [Manage phrases]   Enter = finish     │
-└──────────────────────────────────────────────────────────────────┘
-```
+![TypeSprint demo: typing a phrase with live colouring, then the leaderboard and the report chart](docs/demo.gif)
+
+*15-second demo ([MP4 version](docs/demo.mp4)).*
 
 ## How it meets the project requirements
 
@@ -95,6 +81,7 @@ Run it from the project folder. `python -m pytest` (instead of just `pytest`) ma
 typesprint/
 ├── README.md          this file: what it is, how to set it up and run it
 ├── LICENSE            who may use the code, and how (MIT)
+├── docs/              the demo video for this README
 ├── requirements.txt   packages to install in the venv (only pytest: the game itself is standard library)
 ├── .gitignore         what git must NOT upload: .venv/, caches, your own scores and reports
 ├── main.py            start here: works out the file paths and opens the window
