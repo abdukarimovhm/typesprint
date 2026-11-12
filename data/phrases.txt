@@ -1,0 +1,30 @@
+easy|print('hello')
+easy|x = 10
+easy|name = 'Mina'
+easy|i love python
+easy|for i in range(3):
+easy|total = 0
+easy|the cat sat on the mat
+easy|good morning, inha
+easy|return x + 1
+easy|scores = []
+medium|def add(a, b): return a + b
+medium|names = ['Aziz', 'Mina', 'Jun']
+medium|if score >= 60: print('pass')
+medium|while count < 10: count += 1
+medium|word = 'banana'[::-1]
+medium|Python is easy to read and fun to write.
+medium|with open('data.txt') as f:
+medium|scores.append(int(line.strip()))
+medium|Practice a little every day.
+medium|text = input('Your name: ')
+hard|def average(nums): return sum(nums) / len(nums)
+hard|for i, line in enumerate(open('log.txt')):
+hard|result = [w.upper() for w in words if len(w) > 3]
+hard|if os.path.exists(path): os.remove(path)
+hard|The quick brown fox jumps over the lazy dog.
+hard|print(f'{name} scored {score:.1f} points')
+hard|best = max(results, key=lambda r: r['wpm'])
+hard|label.config(text='Time ' + str(seconds) + ' s')
+hard|Inha University was founded in Incheon in 1954.
+hard|path = os.path.join('data', 'scores.csv')

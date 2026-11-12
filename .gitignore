@@ -1,0 +1,18 @@
+# Virtual environment (every developer makes their own)
+.venv/
+venv/
+
+# Python's cache files
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Data and reports the game creates while you play
+data/scores.csv
+reports/*.txt
+
+# Editor / OS clutter
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
