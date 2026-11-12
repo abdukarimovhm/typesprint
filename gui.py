@@ -219,7 +219,10 @@ def tick():
         return
     seconds = time.time() - state['start']
     typed = ui['typed'].get()
-    set_stats(seconds, game.accuracy(state['target'], typed), game.wpm(typed, seconds))
+    # while typing, only compare with the part of the phrase you have reached so far
+    so_far = state['target'][:len(typed)]
+    live_accuracy = game.accuracy(so_far, typed) if typed != '' else 100.0
+    set_stats(seconds, live_accuracy, game.wpm(typed, seconds))
     state['timer'] = ui['typed'].after(100, tick)
 
 
